@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - DeepSight | Industrial Automation Trading</title>
+  <meta name="description" content="DeepSight - Professional industrial automation control products trading company with self-developed equipment capability.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="info">
+      <span><span class="ico">📞</span> <span data-i18n="top.phone">+86 138-0000-0000</span></span>
+      <span><span class="ico">✉️</span> <span data-i18n="top.email">sales@deepsight-tech.com</span></span>
+      <span><span class="ico">📍</span> <span data-i18n="top.address">广州市天河区灵山东路3号201室</span></span>
+    </div>
+    <div class="info" style="display:flex;align-items:center;gap:16px;">
+      <span data-i18n="top.welcome">欢迎来到 DeepSight 工控产品贸易平台</span>
+      <span class="lang-switcher" onclick="toggleLanguage()">
+        <span class="lang-icon">🌐</span>
+        <span id="lang-switch">English</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">
+      <div class="logo-icon">DS</div>
+      <div class="brand-text">
+        <span>DeepSight</span>
+        <span class="en">Industrial Automation</span>
+      </div>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+      <li class="has-dropdown">
+        <a href="products.html" data-i18n="nav.products">产品中心 ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="products.html?cat=plc" data-i18n="nav.plc">PLC</a></li>
+          <li><a href="products.html?cat=hmi" data-i18n="nav.hmi">HMI</a></li>
+          <li><a href="products.html?cat=vfd" data-i18n="nav.vfd">变频器</a></li>
+          <li><a href="products.html?cat=servo" data-i18n="nav.servo">伺服电机</a></li>
+          <li><a href="products.html?cat=sensors" data-i18n="nav.sensors">传感器</a></li>
+          <li><a href="products.html?cat=vision" data-i18n="nav.vision">视觉配件</a></li>
+          <li style="border-top:1px solid var(--gray-200);margin-top:4px;padding-top:4px;"><a href="products.html?cat=spider-sorter" data-i18n="nav.spider-sorter">蜘蛛手分拣系统</a></li>
+          <li><a href="products.html?cat=flash-test" data-i18n="nav.flash-test">闪测仪器</a></li>
+          <li><a href="products.html?cat=vision-system" data-i18n="nav.vision-system">标准视觉系统套装</a></li>
+          <li><a href="products.html?cat=servo-press" data-i18n="nav.servo-press">伺服电压机</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" class="active" data-i18n="nav.about">关于我们</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
+      <li><a href="contact.html" class="btn btn-accent btn-sm" style="margin-left:12px;" data-i18n="nav.inquiry">立即询盘</a></li>
+    </ul>
+    <div class="nav-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Banner -->
+<section class="page-banner">
+  <div class="container">
+    <h1 data-i18n="about.page.title">关于深谋</h1>
+    <div class="breadcrumb">
+      <a href="index.html" data-i18n="products.breadcrumb">首页</a>
+      <span class="sep">/</span>
+      <span data-i18n="nav.about">关于我们</span>
+    </div>
+  </div>
+</section>
+
+<!-- About Hero -->
+<section class="section">
+  <div class="container">
+    <div class="about-hero">
+      <div class="content">
+        <span class="about-eyebrow" data-i18n="about.page.tag">About Us</span>
+        <h2 data-i18n="about.page.title">关于深谋</h2>
+        <p data-i18n="about.page.p1">广州深谋科技有限公司成立于2024年，是一家专业的工业自动化控制产品销售与贸易企业。公司主营PLC、HMI、变频器、伺服电机、传感器、视觉配件等全品类工控产品，依托强大的供应链整合能力，为全球客户提供品质可靠、价格 competitive 的自动化产品。</p>
+        <p data-i18n="about.page.p2">同时，公司拥有自主研发团队，在工业视觉和自动化检测领域具备深厚技术积累。我们自主研发了蜘蛛手分拣系统、闪测仪器、标准视觉系统套装、伺服电压机等标准设备，可为客户提供从配件到整机的完整解决方案。</p>
+        <p data-i18n="about.page.p3">我们以"快速响应、品质保障、价格优势"为核心服务理念，致力于成为全球客户信赖的工业自动化产品供应商。</p>
+        <div class="mt-4">
+          <a href="contact.html" class="btn btn-primary" data-i18n="nav.inquiry">立即询盘</a>
+          <a href="products.html" class="btn btn-ghost" style="margin-left:12px;" data-i18n="nav.products">产品中心</a>
+        </div>
+      </div>
+      <div class="visual">
+        <div class="about-visual-card">
+          <div class="big-icon">🏭</div>
+          <h3 data-i18n="about.tag">About DeepSight</h3>
+          <p>Industrial automation trading & self-developed equipment</p>
+          <div class="stats-row">
+            <div class="stat">
+              <div data-i18n="about.stat1">2024</div>
+              <div data-i18n="about.stat1.label">成立年份</div>
+            </div>
+            <div class="stat">
+              <div data-i18n="about.stat2">1500+</div>
+              <div data-i18n="about.stat2.label">平米仓储</div>
+            </div>
+            <div class="stat">
+              <div data-i18n="about.stat3">8+</div>
+              <div data-i18n="about.stat3.label">产品品类</div>
+            </div>
+            <div class="stat">
+              <div data-i18n="about.stat4">6+</div>
+              <div data-i18n="about.stat4.label">覆盖行业</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Capabilities -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow" data-i18n="about.capabilities">Core Capabilities</span>
+      <h2 data-i18n="about.capabilities">核心能力</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="icon">🔗</div>
+        <h3 data-i18n="about.cap1.title">供应链整合</h3>
+        <p data-i18n="about.cap1.desc">与多家知名品牌建立长期合作关系，供应链稳定可靠，产品品类齐全，满足一站式采购需求。</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">🔬</div>
+        <h3 data-i18n="about.cap2.title">自主研发</h3>
+        <p data-i18n="about.cap2.desc">拥有视觉算法和自动化设备研发团队，可提供标准检测设备和定制化解决方案。</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">🌍</div>
+        <h3 data-i18n="about.cap3.title">全球贸易</h3>
+        <p data-i18n="about.cap3.desc">面向全球客户，提供多语言服务，支持国际物流配送，经验丰富的贸易团队。</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">🛠️</div>
+        <h3 data-i18n="about.cap4.title">技术支持</h3>
+        <p data-i18n="about.cap4.desc">专业的技术支持团队，提供产品选型、方案设计、安装调试等全流程技术服务。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Milestones -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow" data-i18n="about.milestones">Milestones</span>
+      <h2 data-i18n="about.milestones">发展历程</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="year" data-i18n="about.m1.year">2024 Q1</div>
+          <h4 data-i18n="about.m1.title">公司成立</h4>
+          <p data-i18n="about.m1.desc">广州深谋科技有限公司在广州天河正式成立，注册资本100万元，定位工业自动化控制产品贸易与技术服务。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="year" data-i18n="about.m2.year">2024 Q2</div>
+          <h4 data-i18n="about.m2.title">供应链搭建</h4>
+          <p data-i18n="about.m2.desc">与多家知名工控品牌建立合作关系，完成核心产品线布局。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="year" data-i18n="about.m3.year">2024 Q3</div>
+          <h4 data-i18n="about.m3.title">线上平台上线</h4>
+          <p data-i18n="about.m3.desc">推出线上贸易平台，面向全球客户销售工控产品。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="year" data-i18n="about.m4.year">2024 Q4</div>
+          <h4 data-i18n="about.m4.title">自研标机发布</h4>
+          <p data-i18n="about.m4.desc">发布自研蜘蛛手分拣系统、闪测仪器等标准设备，拓展产品线。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="year" data-i18n="about.m5.year">2025</div>
+          <h4 data-i18n="about.m5.title">持续扩展</h4>
+          <p data-i18n="about.m5.desc">持续扩展产品品类与服务范围，深化全球市场布局。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2 data-i18n="cta.title">需要产品报价或技术方案？</h2>
+    <p data-i18n="cta.desc">我们的专业团队随时为您提供服务</p>
+    <div class="actions">
+      <a href="contact.html" class="btn btn-accent btn-lg" data-i18n="cta.btn1">立即询盘</a>
+      <a href="products.html" class="btn btn-outline btn-lg" data-i18n="cta.btn2">浏览产品</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="navbar-brand">
+          <div class="logo-icon">DS</div>
+          <div class="brand-text">
+            <span style="color:var(--white);">DeepSight</span>
+            <span class="en">Industrial Automation</span>
+          </div>
+        </div>
+        <p data-i18n="footer.desc">广州深谋科技有限公司 — 专业工业自动化控制产品销售与贸易企业</p>
+        <div class="social-links"><a href="#">💬</a><a href="#">✉️</a><a href="#">📞</a><a href="#">📱</a></div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.products">产品中心</h4>
+        <ul>
+          <li><a href="products.html?cat=plc" data-i18n="nav.plc">PLC</a></li>
+          <li><a href="products.html?cat=hmi" data-i18n="nav.hmi">HMI</a></li>
+          <li><a href="products.html?cat=vfd" data-i18n="nav.vfd">变频器</a></li>
+          <li><a href="products.html?cat=servo" data-i18n="nav.servo">伺服电机</a></li>
+          <li><a href="products.html?cat=sensors" data-i18n="nav.sensors">传感器</a></li>
+          <li><a href="products.html?cat=spider-sorter" data-i18n="nav.spider-sorter">蜘蛛手分拣系统</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.links">快速链接</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+          <li><a href="about.html" data-i18n="nav.about">关于我们</a></li>
+          <li><a href="products.html" data-i18n="nav.products">产品中心</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.industries">服务行业</h4>
+        <ul>
+          <li><a href="#" data-i18n="ind.1">3C电子</a></li>
+          <li><a href="#" data-i18n="ind.2">新能源</a></li>
+          <li><a href="#" data-i18n="ind.3">医疗</a></li>
+          <li><a href="#" data-i18n="ind.4">PCB</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2025 广州深谋科技有限公司 版权所有</p>
+      <div class="social"><a href="#">💬</a><a href="#">✉️</a><a href="#">📞</a><a href="#">📱</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="float-buttons">
+  <a href="contact.html" class="float-btn inquiry" title="在线询盘">💬</a>
+  <button class="float-btn top" title="返回顶部">↑</button>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/products-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

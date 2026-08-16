@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepSight | Industrial Automation Products - PLC, HMI, VFD, Servo, Sensors, Vision Systems</title>
+  <meta name="description" content="DeepSight (Guangzhou DeepSight Technology Co., Ltd.) is an AI-driven industrial automation platform integrating R&D, equipment manufacturing, and global trade. We supply PLC, HMI, VFD, servo motors, sensors, vision components, and self-developed standard equipment worldwide.">
+  <meta name="keywords" content="industrial automation, PLC, HMI, VFD, servo motor, sensor, vision system, spider sorting, flash testing, industrial control products, automation equipment, DeepSight, Guangzhou">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Guangzhou DeepSight Technology Co., Ltd.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DeepSight | Industrial Automation Products & Solutions">
+  <meta property="og:description" content="AI-driven industrial automation platform. PLC, HMI, VFD, servo motors, sensors, vision systems, and self-developed equipment. Global trade & technical support.">
+  <meta property="og:site_name" content="DeepSight">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DeepSight | Industrial Automation Products & Solutions">
+  <meta name="twitter:description" content="AI-driven industrial automation platform. PLC, HMI, VFD, servo motors, sensors, vision systems, and self-developed equipment.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.deepsight-tech.com/">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Guangzhou DeepSight Technology Co., Ltd.",
+    "alternateName": "DeepSight",
+    "url": "https://www.deepsight-tech.com/",
+    "logo": "https://www.deepsight-tech.com/images/logo.png",
+    "description": "AI-driven industrial automation platform integrating R&D, equipment manufacturing, and global trade. We supply PLC, HMI, VFD, servo motors, sensors, vision components, and self-developed standard equipment.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Room 201, No. 3 Lingshan East Road, Tianhe District",
+      "addressLocality": "Guangzhou",
+      "addressRegion": "Guangdong",
+      "addressCountry": "CN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+86-138-0000-0000",
+      "contactType": "sales",
+      "email": "sales@deepsight-tech.com",
+      "availableLanguage": ["Chinese", "English"]
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="info">
+      <span><span class="ico">📞</span> <span data-i18n="top.phone">+86 138-0000-0000</span></span>
+      <span><span class="ico">✉️</span> <span data-i18n="top.email">sales@deepsight-tech.com</span></span>
+      <span><span class="ico">📍</span> <span data-i18n="top.address">广州市天河区灵山东路3号201室</span></span>
+    </div>
+    <div class="info">
+      <span data-i18n="top.welcome">欢迎来到 DeepSight 工控产品贸易平台</span>
+      <span class="lang-switcher" onclick="toggleLanguage()">
+        <span class="lang-icon">🌐</span>
+        <span id="lang-switch">English</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">
+      <div class="logo-icon">DS</div>
+      <div class="brand-text">
+        <span>DeepSight</span>
+        <span class="en">Industrial Automation</span>
+      </div>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="active" data-i18n="nav.home">首页</a></li>
+      <li class="has-dropdown">
+        <a href="products.html" data-i18n="nav.products">产品中心 ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="products.html?cat=plc" data-i18n="nav.plc">PLC 可编程控制器</a></li>
+          <li><a href="products.html?cat=hmi" data-i18n="nav.hmi">HMI 人机界面</a></li>
+          <li><a href="products.html?cat=io-modules" data-i18n="nav.io-modules">I/O 模块</a></li>
+          <li><a href="products.html?cat=relays" data-i18n="nav.relays">继电器</a></li>
+          <li><a href="products.html?cat=vfd" data-i18n="nav.vfd">变频器</a></li>
+          <li><a href="products.html?cat=servo" data-i18n="nav.servo">伺服电机与驱动器</a></li>
+          <li><a href="products.html?cat=sensors" data-i18n="nav.sensors">传感器</a></li>
+          <li><a href="products.html?cat=vision" data-i18n="nav.vision">视觉配件</a></li>
+          <li><a href="products.html?cat=other-ic" data-i18n="nav.other-ic">其他工控产品</a></li>
+          <li><a href="products.html?cat=spider-sorter" data-i18n="nav.spider-sorter">蜘蛛手分拣系统</a></li>
+          <li><a href="products.html?cat=flash-test" data-i18n="nav.flash-test">闪测仪器</a></li>
+          <li><a href="products.html?cat=vision-system" data-i18n="nav.vision-system">标准视觉系统套装</a></li>
+          <li><a href="products.html?cat=servo-press" data-i18n="nav.servo-press">伺服电压机</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" data-i18n="nav.about">关于我们</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
+      <li><a href="contact.html" class="btn btn-accent btn-sm" style="margin-left:12px;" data-i18n="nav.inquiry">立即询盘</a></li>
+    </ul>
+    <div class="nav-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        <span data-i18n="hero.badge">AI研发 + 设备制造 + 工控贸易</span>
+      </div>
+      <h1><span data-i18n="hero.title1">专业工业自动化控制</span><br><span class="highlight" data-i18n="hero.title2">产品贸易平台</span></h1>
+      <p data-i18n="hero.desc">集AI视觉研发、标准设备制造、工控产品贸易于一体的工业自动化企业。从核心算法到整机交付，从配件到全球贸易，为您提供一站式解决方案。</p>
+      <div class="hero-actions">
+        <a href="products.html" class="btn btn-primary btn-lg" data-i18n="hero.btn.products">浏览全部产品</a>
+        <a href="contact.html" class="btn btn-outline-light btn-lg" data-i18n="hero.btn.quote">获取报价</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num" data-i18n="hero.stat1">10+</div>
+          <div class="label" data-i18n="hero.stat1.label">年行业经验</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num" data-i18n="hero.stat2">1500+</div>
+          <div class="label" data-i18n="hero.stat2.label">平米仓储</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num" data-i18n="hero.stat3">8+</div>
+          <div class="label" data-i18n="hero.stat3.label">产品品类</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num" data-i18n="hero.stat4">24h</div>
+          <div class="label" data-i18n="hero.stat4.label">快速响应</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-visual-card">
+        <div class="tech-icon">🏭</div>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <div class="ico">🔲</div>
+            <div class="name" data-i18n="hero.ic.plc">PLC</div>
+          </div>
+          <div class="tech-item">
+            <div class="ico">📺</div>
+            <div class="name" data-i18n="hero.ic.hmi">HMI</div>
+          </div>
+          <div class="tech-item">
+            <div class="ico">🔄</div>
+            <div class="name" data-i18n="hero.ic.vfd">变频器</div>
+          </div>
+          <div class="tech-item">
+            <div class="ico">⚙️</div>
+            <div class="name" data-i18n="hero.ic.servo">伺服电机</div>
+          </div>
+          <div class="tech-item">
+            <div class="ico">📡</div>
+            <div class="name" data-i18n="hero.ic.sensor">传感器</div>
+          </div>
+          <div class="tech-item">
+            <div class="ico">📷</div>
+            <div class="name" data-i18n="hero.ic.vision">视觉配件</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Capability Loop Section -->
+<section class="loop-section">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow" data-i18n="loop.tag">Core Capabilities</span>
+      <h2 data-i18n="loop.title">核心能力闭环</h2>
+      <p data-i18n="loop.subtitle">AI研发 · 设备制造 · 工控贸易 · 应用落地 — 形成完整的产业闭环</p>
+    </div>
+    <div class="loop-wrapper">
+      <div class="loop-diagram">
+        <svg viewBox="0 0 500 500" class="loop-svg" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="loopCenter" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(0,212,255,0.25)"/>
+              <stop offset="100%" stop-color="rgba(0,212,255,0.02)"/>
+            </radialGradient>
+            <marker id="loopArrow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto">
+              <polygon points="0 0, 12 4, 0 8" fill="#00D4FF"/>
+            </marker>
+            <filter id="loopGlow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+          <circle cx="250" cy="250" r="210" fill="none" stroke="rgba(0,212,255,0.06)" stroke-width="1" stroke-dasharray="6 6"/>
+          <circle cx="250" cy="250" r="170" fill="none" stroke="rgba(0,212,255,0.03)" stroke-width="1"/>
+          <path d="M 295 98 Q 380 115 402 205" fill="none" stroke="rgba(0,212,255,0.5)" stroke-width="2.5" marker-end="url(#loopArrow)" filter="url(#loopGlow)"/>
+          <path d="M 402 295 Q 380 385 295 402" fill="none" stroke="rgba(0,212,255,0.5)" stroke-width="2.5" marker-end="url(#loopArrow)" filter="url(#loopGlow)"/>
+          <path d="M 205 402 Q 120 385 98 295" fill="none" stroke="rgba(0,212,255,0.5)" stroke-width="2.5" marker-end="url(#loopArrow)" filter="url(#loopGlow)"/>
+          <path d="M 98 205 Q 120 115 205 98" fill="none" stroke="rgba(0,212,255,0.5)" stroke-width="2.5" marker-end="url(#loopArrow)" filter="url(#loopGlow)"/>
+          <circle cx="250" cy="250" r="68" fill="url(#loopCenter)" stroke="rgba(0,212,255,0.3)" stroke-width="1.5"/>
+          <text x="250" y="240" text-anchor="middle" fill="#00D4FF" font-size="20" font-weight="bold">DeepSight</text>
+          <text x="250" y="262" text-anchor="middle" fill="#7B8590" font-size="11">核心能力闭环</text>
+          <text x="250" y="278" text-anchor="middle" fill="#5A6573" font-size="9">Closed Loop</text>
+          <g><circle cx="250" cy="55" r="50" fill="rgba(11,31,58,0.9)" stroke="#00D4FF" stroke-width="2"/><text x="250" y="48" text-anchor="middle" font-size="28">🧠</text><text x="250" y="74" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="bold">AI研发</text></g>
+          <g><circle cx="445" cy="250" r="50" fill="rgba(11,31,58,0.9)" stroke="#00D4FF" stroke-width="2"/><text x="445" y="243" text-anchor="middle" font-size="28">🏭</text><text x="445" y="269" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="bold">设备制造</text></g>
+          <g><circle cx="250" cy="445" r="50" fill="rgba(11,31,58,0.9)" stroke="#00D4FF" stroke-width="2"/><text x="250" y="438" text-anchor="middle" font-size="28">📦</text><text x="250" y="464" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="bold">工控贸易</text></g>
+          <g><circle cx="55" cy="250" r="50" fill="rgba(11,31,58,0.9)" stroke="#00D4FF" stroke-width="2"/><text x="55" y="243" text-anchor="middle" font-size="28">🚀</text><text x="55" y="269" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="bold">应用落地</text></g>
+          <text x="310" y="62" fill="rgba(0,212,255,0.35)" font-size="10" font-weight="bold">01</text>
+          <text x="440" y="195" fill="rgba(0,212,255,0.35)" font-size="10" font-weight="bold">02</text>
+          <text x="190" y="465" fill="rgba(0,212,255,0.35)" font-size="10" font-weight="bold">03</text>
+          <text x="60" y="195" fill="rgba(0,212,255,0.35)" font-size="10" font-weight="bold">04</text>
+        </svg>
+      </div>
+      <div class="loop-cards">
+        <div class="loop-card">
+          <div class="step-num">01</div>
+          <div class="icon">🧠</div>
+          <h3 data-i18n="loop.ai.title">AI研发</h3>
+          <p data-i18n="loop.ai.desc">视觉算法、AI检测模型、深度学习平台</p>
+          <div class="tags"><span data-i18n="loop.ai.tag1">视觉算法</span><span data-i18n="loop.ai.tag2">深度学习</span></div>
+        </div>
+        <div class="loop-card">
+          <div class="step-num">02</div>
+          <div class="icon">🏭</div>
+          <h3 data-i18n="loop.mfg.title">设备制造</h3>
+          <p data-i18n="loop.mfg.desc">蜘蛛手分拣、闪测仪器、视觉系统、伺服电压机</p>
+          <div class="tags"><span data-i18n="loop.mfg.tag1">标准设备</span><span data-i18n="loop.mfg.tag2">自主研发</span></div>
+        </div>
+        <div class="loop-card">
+          <div class="step-num">03</div>
+          <div class="icon">📦</div>
+          <h3 data-i18n="loop.trade.title">工控贸易</h3>
+          <p data-i18n="loop.trade.desc">PLC/HMI/变频器/伺服/传感器全品类工控产品</p>
+          <div class="tags"><span data-i18n="loop.trade.tag1">全品类</span><span data-i18n="loop.trade.tag2">全球发货</span></div>
+        </div>
+        <div class="loop-card">
+          <div class="step-num">04</div>
+          <div class="icon">🚀</div>
+          <h3 data-i18n="loop.app.title">应用落地</h3>
+          <p data-i18n="loop.app.desc">3C/新能源/医疗/汽车等行业解决方案交付</p>
+          <div class="tags"><span data-i18n="loop.app.tag1">行业方案</span><span data-i18n="loop.app.tag2">技术支持</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Equipment Showcase -->
+<section class="equipment-section">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow" data-i18n="equip.tag">Self-Developed Equipment</span>
+      <h2 data-i18n="equip.title">自研标准设备</h2>
+      <p data-i18n="equip.subtitle">AI驱动 · 自主研发 · 标准化交付</p>
+    </div>
+    <div class="equipment-bento">
+      <div class="equipment-card large">
+        <div class="equipment-visual">
+          <img src="images/spider-sorter.jpg" alt="Spider Sorting System" loading="lazy">
+        </div>
+        <div class="equipment-info">
+          <span class="equipment-tag" data-i18n="equip.selfdev">自研 R&amp;D</span>
+          <h3 data-i18n="equip.spider.title">蜘蛛手分拣系统</h3>
+          <p data-i18n="equip.spider.desc">视觉引导高速并联机器人分拣系统，适用于食品、医药、物流行业，最高节拍120次/分钟</p>
+          <div class="equipment-specs">
+            <span data-i18n="equip.spider.spec1">负载 3kg</span>
+            <span data-i18n="equip.spider.spec2">精度 ±0.05mm</span>
+            <span data-i18n="equip.spider.spec3">3D视觉引导</span>
+          </div>
+        </div>
+      </div>
+      <div class="equipment-card">
+        <div class="equipment-visual">
+          <img src="images/flash-test.jpg" alt="Flash Testing Instrument" loading="lazy">
+        </div>
+        <div class="equipment-info">
+          <span class="equipment-tag" data-i18n="equip.selfdev">自研 R&amp;D</span>
+          <h3 data-i18n="equip.flash.title">闪测仪器</h3>
+          <p data-i18n="equip.flash.desc">一键式精密尺寸测量与缺陷检测</p>
+        </div>
+      </div>
+      <div class="equipment-card">
+        <div class="equipment-visual">
+          <img src="images/vision-system.jpg" alt="Vision System Kit" loading="lazy">
+        </div>
+        <div class="equipment-info">
+          <span class="equipment-tag" data-i18n="equip.selfdev">自研 R&amp;D</span>
+          <h3 data-i18n="equip.vision.title">标准视觉系统套装</h3>
+          <p data-i18n="equip.vision.desc">软硬件一体化视觉检测方案，即插即用</p>
+        </div>
+      </div>
+      <div class="equipment-card">
+        <div class="equipment-visual">
+          <img src="images/servo-press.jpg" alt="Servo Press Machine" loading="lazy">
+        </div>
+        <div class="equipment-info">
+          <span class="equipment-tag" data-i18n="equip.selfdev">自研 R&amp;D</span>
+          <h3 data-i18n="equip.press.title">伺服电压机</h3>
+          <p data-i18n="equip.press.desc">精密伺服控制压装设备，力位双控</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Product Categories -->
+<section class="category-section">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow" data-i18n="cat.title">Product Categories</span>
+      <h2 data-i18n="cat.title">产品分类</h2>
+      <p data-i18n="cat.subtitle">涵盖工业自动化控制全品类产品，从核心控制器件到自研标准设备</p>
+    </div>
+
+    <div class="section-divider">
+      <span data-i18n="cat.section">工控产品</span>
+    </div>
+    <div class="category-grid" style="margin-bottom:32px;" id="cat-grid-ic"></div>
+
+    <div class="section-divider">
+      <span data-i18n="cat.section.selfdev">自研标机</span>
+    </div>
+    <div class="category-grid" id="cat-grid-selfdev"></div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section">
+  <div class="container">
+    <div class="about-section">
+      <div class="about-content">
+        <div class="about-eyebrow" data-i18n="about.tag">About DeepSight</div>
+        <h2 data-i18n="about.title">关于深谋</h2>
+        <p data-i18n="about.p1">广州深谋科技有限公司是一家专业的工业自动化控制产品销售与贸易企业，主营PLC、HMI、变频器、伺服电机、传感器等全品类工控产品。公司依托强大的供应链整合能力，为客户提供品质可靠、价格有竞争力的自动化产品。</p>
+        <p data-i18n="about.p2">同时，公司拥有自主研发团队，具备标准检测设备的研发与交付能力，可为客户提供视觉检测系统、分拣设备等自研标机产品。我们以"快速响应、品质保障、价格优势"为核心服务理念，服务全球客户。</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="ico">✓</div>
+            <div class="text">
+              <h4 data-i18n="about.f1">10+年行业经验</h4>
+              <p data-i18n="about.f1.desc">深耕工业自动化领域</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="ico">✓</div>
+            <div class="text">
+              <h4 data-i18n="about.f2">1500+平米仓储</h4>
+              <p data-i18n="about.f2.desc">充足库存保障供应</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="ico">✓</div>
+            <div class="text">
+              <h4 data-i18n="about.f3">全球发货</h4>
+              <p data-i18n="about.f3.desc">支持国际物流配送</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="ico">✓</div>
+            <div class="text">
+              <h4 data-i18n="about.f4">AI研发能力</h4>
+              <p data-i18n="about.f4.desc">视觉算法与AI检测</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4">
+          <a href="about.html" class="btn btn-ghost btn-lg" data-i18n="about.btn">了解更多 →</a>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-visual-card">
+          <div class="big-icon">🔬</div>
+          <h3 data-i18n="about.card.title">AI + 制造 + 贸易</h3>
+          <p data-i18n="about.card.desc">三位一体能力闭环</p>
+          <div class="stats-row">
+            <div class="stat">
+              <div class="num" data-i18n="about.stat1">2024</div>
+              <div class="label" data-i18n="about.stat1.label">成立年份</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-i18n="about.stat2">1500+</div>
+              <div class="label" data-i18n="about.stat2.label">平米仓储</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-i18n="about.stat3">8+</div>
+              <div class="label" data-i18n="about.stat3.label">产品品类</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Advantages (Dark Section) -->
+<section class="advantages-section">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow" data-i18n="adv.tag">Our Advantages</span>
+      <h2 data-i18n="adv.title">核心优势</h2>
+      <p data-i18n="adv.subtitle">为什么选择深谋？我们为每一位客户提供专业、高效、可靠的工控产品贸易服务</p>
+    </div>
+    <div class="advantages-grid">
+      <div class="advantage-card">
+        <div class="icon">⚡</div>
+        <h3 data-i18n="adv.fast.title">快速响应</h3>
+        <p data-i18n="adv.fast.desc">专业团队24小时内响应询盘，提供产品选型建议与技术方案支持，确保客户需求得到及时处理。</p>
+      </div>
+      <div class="advantage-card">
+        <div class="icon">💰</div>
+        <h3 data-i18n="adv.price.title">竞争优势价格</h3>
+        <p data-i18n="adv.price.desc">依托强大的采购和供应能力，我们能够提供市场上有竞争力的价格，让客户以更优成本获取高品质产品。</p>
+      </div>
+      <div class="advantage-card">
+        <div class="icon">📦</div>
+        <h3 data-i18n="adv.stock.title">库存充足 快速发货</h3>
+        <p data-i18n="adv.stock.desc">维持充足的产品库存，确保各类产品随时可用，保证快速发货，让客户无需等待即可使用。</p>
+      </div>
+      <div class="advantage-card">
+        <div class="icon">🛡️</div>
+        <h3 data-i18n="adv.supply.title">稳定可靠供应链</h3>
+        <p data-i18n="adv.supply.desc">通过长期合作供应商建立稳定高效的供应链体系，确保产品质量一致性和交付可靠性。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews-section">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow" data-i18n="rev.tag">Customer Reviews</span>
+      <h2 data-i18n="rev.title">客户评价</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="text" data-i18n="rev.1.text">作为自动化采购方，质量和可靠性是我们的首要考虑。该公司提供的自动化设备非常稳定，长期使用没有任何问题，大大提升了我们的生产效率。非常满意！</p>
+        <div class="author">
+          <div class="avatar">A</div>
+          <div class="author-info">
+            <div class="name" data-i18n="rev.1.name">Alice Customer</div>
+            <div class="role" data-i18n="rev.1.title">采购工程师</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="text" data-i18n="rev.2.text">我们对交期要求很高，尤其是加急订单。每次下单都能快速处理并确保及时发货。询盘响应也非常迅速，效率很高，值得信赖。</p>
+        <div class="author">
+          <div class="avatar">T</div>
+          <div class="author-info">
+            <div class="name" data-i18n="rev.2.name">Tom Customer</div>
+            <div class="role" data-i18n="rev.2.title">采购经理</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="text" data-i18n="rev.3.text">这家公司不仅价格非常有竞争力，而且产品质量过硬。性价比非常出色。我们选择他们而非其他供应商，正是因为他们在不牺牲质量的前提下提供了更优的价格。</p>
+        <div class="author">
+          <div class="avatar">A</div>
+          <div class="author-info">
+            <div class="name" data-i18n="rev.3.name">Alexo Customer</div>
+            <div class="role" data-i18n="rev.3.title">工程师</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Industries -->
+<section class="industries-section">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow" data-i18n="ind.tag">Industries We Serve</span>
+      <h2 data-i18n="ind.title">服务行业覆盖</h2>
+    </div>
+    <div class="industries-grid">
+      <div class="industry-card">
+        <div class="icon">📱</div>
+        <div class="name" data-i18n="ind.1">3C电子</div>
+      </div>
+      <div class="industry-card">
+        <div class="icon">🔋</div>
+        <div class="name" data-i18n="ind.2">新能源</div>
+      </div>
+      <div class="industry-card">
+        <div class="icon">🏥</div>
+        <div class="name" data-i18n="ind.3">医疗</div>
+      </div>
+      <div class="industry-card">
+        <div class="icon">🔌</div>
+        <div class="name" data-i18n="ind.4">PCB</div>
+      </div>
+      <div class="industry-card">
+        <div class="icon">🚗</div>
+        <div class="name" data-i18n="ind.5">汽车制造</div>
+      </div>
+      <div class="industry-card">
+        <div class="icon">📦</div>
+        <div class="name" data-i18n="ind.6">物流/仓储</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <h2 data-i18n="cta.title">需要产品报价或技术方案？</h2>
+    <p data-i18n="cta.desc">我们的专业团队随时为您提供服务，从产品选型到技术支持，一站式解决您的工控产品需求</p>
+    <div class="actions">
+      <a href="contact.html" class="btn btn-accent btn-lg" data-i18n="cta.btn1">立即询盘</a>
+      <a href="products.html" class="btn btn-outline-light btn-lg" data-i18n="cta.btn2">浏览产品</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-row">
+          <div class="logo-icon">DS</div>
+          <div class="brand-text">
+            <span>DeepSight</span>
+            <span class="en">Industrial Automation</span>
+          </div>
+        </div>
+        <p data-i18n="footer.desc">广州深谋科技有限公司 — 专业工业自动化控制产品销售与贸易企业，同时拥有自主研发标准设备能力。Fast Response · Competitive Price · Stable Supply</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.products">产品中心</h4>
+        <ul id="footer-products">
+          <li><a href="products.html?cat=plc" data-i18n="nav.plc">PLC 可编程控制器</a></li>
+          <li><a href="products.html?cat=hmi" data-i18n="nav.hmi">HMI 人机界面</a></li>
+          <li><a href="products.html?cat=vfd" data-i18n="nav.vfd">变频器</a></li>
+          <li><a href="products.html?cat=servo" data-i18n="nav.servo">伺服电机与驱动器</a></li>
+          <li><a href="products.html?cat=sensors" data-i18n="nav.sensors">传感器</a></li>
+          <li><a href="products.html?cat=vision" data-i18n="nav.vision">视觉配件</a></li>
+          <li><a href="products.html?cat=spider-sorter" data-i18n="nav.spider-sorter">蜘蛛手分拣系统</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.links">快速链接</h4>
+        <ul id="footer-links">
+          <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+          <li><a href="about.html" data-i18n="nav.about">关于我们</a></li>
+          <li><a href="products.html" data-i18n="nav.products">产品中心</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
+          <li><a href="contact.html" data-i18n="nav.inquiry">立即询盘</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.industries">服务行业</h4>
+        <ul id="footer-industries">
+          <li><a href="#" data-i18n="ind.1">3C电子</a></li>
+          <li><a href="#" data-i18n="ind.2">新能源</a></li>
+          <li><a href="#" data-i18n="ind.3">医疗</a></li>
+          <li><a href="#" data-i18n="ind.4">PCB</a></li>
+          <li><a href="#" data-i18n="ind.5">汽车制造</a></li>
+          <li><a href="#" data-i18n="ind.6">物流/仓储</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2025 广州深谋科技有限公司 (Guangzhou DeepSight Technologies Co., Ltd) 版权所有 | 粤ICP备XXXXXXXX号</p>
+      <div class="social">
+        <a href="#" title="WeChat">💬</a>
+        <a href="#" title="Email">✉️</a>
+        <a href="#" title="Phone">📞</a>
+        <a href="#" title="WhatsApp">📱</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Float Buttons -->
+<div class="float-buttons">
+  <a href="contact.html" class="float-btn inquiry" title="在线询盘">💬</a>
+  <button class="float-btn top" title="返回顶部">↑</button>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/products-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

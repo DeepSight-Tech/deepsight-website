@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - DeepSight | Industrial Automation Control Products</title>
+  <meta name="description" content="Browse our full range of industrial automation control products: PLC, HMI, VFD, servo motors, sensors, vision components and self-developed equipment.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="info">
+      <span><span class="ico">📞</span> <span data-i18n="top.phone">+86 138-0000-0000</span></span>
+      <span><span class="ico">✉️</span> <span data-i18n="top.email">sales@deepsight-tech.com</span></span>
+      <span><span class="ico">📍</span> <span data-i18n="top.address">广州市天河区灵山东路3号201室</span></span>
+    </div>
+    <div class="info" style="display:flex;align-items:center;gap:16px;">
+      <span data-i18n="top.welcome">欢迎来到 DeepSight 工控产品贸易平台</span>
+      <span class="lang-switcher" onclick="toggleLanguage()">
+        <span class="lang-icon">🌐</span>
+        <span id="lang-switch">English</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">
+      <div class="logo-icon">DS</div>
+      <div class="brand-text">
+        <span>DeepSight</span>
+        <span class="eyebrow">Industrial Automation</span>
+      </div>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+      <li class="has-dropdown">
+        <a href="products.html" class="active" data-i18n="nav.products">产品中心 ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="products.html?cat=plc" data-i18n="nav.plc">PLC 可编程控制器</a></li>
+          <li><a href="products.html?cat=hmi" data-i18n="nav.hmi">HMI 人机界面</a></li>
+          <li><a href="products.html?cat=io-modules" data-i18n="nav.io-modules">I/O 模块</a></li>
+          <li><a href="products.html?cat=relays" data-i18n="nav.relays">继电器</a></li>
+          <li><a href="products.html?cat=vfd" data-i18n="nav.vfd">变频器</a></li>
+          <li><a href="products.html?cat=servo" data-i18n="nav.servo">伺服电机与驱动器</a></li>
+          <li><a href="products.html?cat=sensors" data-i18n="nav.sensors">传感器</a></li>
+          <li><a href="products.html?cat=vision" data-i18n="nav.vision">视觉配件</a></li>
+          <li><a href="products.html?cat=other-ic" data-i18n="nav.other-ic">其他工控产品</a></li>
+          <li style="border-top:1px solid var(--gray-200);margin-top:4px;padding-top:4px;"><a href="products.html?cat=spider-sorter" data-i18n="nav.spider-sorter">蜘蛛手分拣系统</a></li>
+          <li><a href="products.html?cat=flash-test" data-i18n="nav.flash-test">闪测仪器</a></li>
+          <li><a href="products.html?cat=vision-system" data-i18n="nav.vision-system">标准视觉系统套装</a></li>
+          <li><a href="products.html?cat=servo-press" data-i18n="nav.servo-press">伺服电压机</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" data-i18n="nav.about">关于我们</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
+      <li><a href="contact.html" class="btn btn-accent btn-sm" style="margin-left:12px;" data-i18n="nav.inquiry">立即询盘</a></li>
+    </ul>
+    <div class="nav-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Banner -->
+<section class="page-banner">
+  <div class="container">
+    <h1 id="page-title" data-i18n="products.title">产品中心</h1>
+    <div class="breadcrumb">
+      <a href="index.html" data-i18n="products.breadcrumb">首页</a>
+      <span class="sep">/</span>
+      <span data-i18n="products.title">产品中心</span>
+    </div>
+  </div>
+</section>
+
+<!-- Products Layout -->
+<div class="container">
+  <div class="products-layout">
+    <!-- Sidebar -->
+    <aside class="products-sidebar">
+      <div class="sidebar-block">
+        <h3>📁 <span data-i18n="nav.products">产品中心</span></h3>
+        <ul class="cat-filter" id="cat-filter">
+          <!-- Rendered by JS -->
+        </ul>
+      </div>
+      <div class="sidebar-block">
+        <div style="padding:20px;">
+          <h4 data-i18n="products.sidebar.contact">需要帮助？</h4>
+          <p style="font-size:13px;margin-bottom:16px;" data-i18n="products.sidebar.contact.desc">联系我们获取专业产品选型建议</p>
+          <a href="contact.html" class="btn btn-accent" data-i18n="products.sidebar.contact.btn">在线咨询</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <div class="products-main">
+      <div class="products-toolbar">
+        <div class="result-info" id="result-info"></div>
+        <div style="display:flex;gap:12px;align-items:center;">
+          <input type="text" id="product-search" class="form-group" style="padding:8px 14px;border:1px solid var(--gray-300);border-radius:var(--radius-sm);font-size:14px;width:200px;" data-i18n-placeholder="products.search.placeholder" placeholder="搜索产品...">
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span data-i18n="products.sort">排序</span>
+            <select id="product-sort">
+              <option value="default" data-i18n="products.sort.default">默认排序</option>
+              <option value="name" data-i18n="products.sort.name">按名称</option>
+              <option value="category" data-i18n="products.sort.category">按分类</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <h2 data-i18n="cta.title">需要产品报价或技术方案？</h2>
+    <p data-i18n="cta.desc">我们的专业团队随时为您提供服务，从产品选型到技术支持，一站式解决您的工控产品需求</p>
+    <div class="actions">
+      <a href="contact.html" class="btn btn-accent btn-lg" data-i18n="cta.btn1">立即询盘</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="navbar-brand">
+          <div class="logo-icon">DS</div>
+          <div class="brand-text">
+            <span style="color:var(--white);">DeepSight</span>
+            <span class="eyebrow">Industrial Automation</span>
+          </div>
+        </div>
+        <p data-i18n="footer.desc">广州深谋科技有限公司 — 专业工业自动化控制产品销售与贸易企业</p>
+        <div class="social-links">
+          <a href="#">💬</a><a href="#">✉️</a><a href="#">📞</a><a href="#">📱</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.products">产品中心</h4>
+        <ul>
+          <li><a href="products.html?cat=plc" data-i18n="nav.plc">PLC</a></li>
+          <li><a href="products.html?cat=hmi" data-i18n="nav.hmi">HMI</a></li>
+          <li><a href="products.html?cat=vfd" data-i18n="nav.vfd">变频器</a></li>
+          <li><a href="products.html?cat=servo" data-i18n="nav.servo">伺服电机</a></li>
+          <li><a href="products.html?cat=sensors" data-i18n="nav.sensors">传感器</a></li>
+          <li><a href="products.html?cat=vision" data-i18n="nav.vision">视觉配件</a></li>
+          <li><a href="products.html?cat=spider-sorter" data-i18n="nav.spider-sorter">蜘蛛手分拣系统</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.links">快速链接</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+          <li><a href="about.html" data-i18n="nav.about">关于我们</a></li>
+          <li><a href="products.html" data-i18n="nav.products">产品中心</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.industries">服务行业</h4>
+        <ul>
+          <li><a href="#" data-i18n="ind.1">3C电子</a></li>
+          <li><a href="#" data-i18n="ind.2">新能源</a></li>
+          <li><a href="#" data-i18n="ind.3">医疗</a></li>
+          <li><a href="#" data-i18n="ind.4">PCB</a></li>
+          <li><a href="#" data-i18n="ind.5">汽车制造</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2025 广州深谋科技有限公司 版权所有</p>
+      <div class="social">
+        <a href="#">💬</a><a href="#">✉️</a><a href="#">📞</a><a href="#">📱</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="float-buttons">
+  <a href="contact.html" class="float-btn inquiry" title="在线询盘">💬</a>
+  <button class="float-btn top" title="返回顶部">↑</button>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/products-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
