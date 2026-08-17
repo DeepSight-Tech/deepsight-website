@@ -66,10 +66,23 @@
     </div>
     <div class="info">
       <span data-i18n="top.welcome">欢迎来到 DeepSight 工控产品贸易平台</span>
-      <span class="lang-switcher" onclick="toggleLanguage()">
-        <span class="lang-icon">🌐</span>
-        <span id="lang-switch">English</span>
-      </span>
+     <div class="lang-switcher" id="lang-switcher">
+  <button class="lang-current" id="lang-current-btn" onclick="toggleLangDropdown()">
+    <span id="current-flag">🇺🇸</span>
+    <span id="current-lang-label">EN</span>
+    <svg class="lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+      <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <ul class="lang-dropdown" id="lang-dropdown">
+    <li data-lang="en" onclick="switchLanguage('en')">
+      <span class="flag">🇺🇸</span> English
+    </li>
+    <li data-lang="zh" onclick="switchLanguage('zh')">
+      <span class="flag">🇨🇳</span> 中文
+    </li>
+  </ul>
+</div>
     </div>
   </div>
 </div>
